@@ -7,3 +7,7 @@ The program must satisfy the following sentences:
 - If the number is divisible by 3 and 5, display 'FizzBuzz';
 - If is not a number display 'Não é um número' (not a number);
 - If it is not divisible by 3 or 5, display the number. 
+
+### 2-ReverseString
+
+The program must reverse a string
