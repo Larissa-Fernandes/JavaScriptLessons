@@ -11,3 +11,7 @@ The program must satisfy the following sentences:
 ### 2-ReverseString
 
 The program must reverse a string
+
+### 3-CelsiusToFahrenheit
+
+The program must convert a Celsius value to Fahrenheit
