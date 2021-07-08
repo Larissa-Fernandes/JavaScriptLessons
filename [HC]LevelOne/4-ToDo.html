@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en"> <!-- lang ajuda a definir o idioma de um elemento -->
+    <head>
+        <meta charset="UFT-8"> <!-- especifica a codificação de caracteres utilizada -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- HTTP-EQUIV serve para controlar as ações do browser 
+                                                                    e também especificam melhor as informações -->
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> <!-- Tamanho p/ diferentes dispositivos -->
+        
+        <title>To do list</title>
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <form action="" class "container" id="form" formList> <!-- Form é uma seção que contém controles interativos
+                                                                    que permitem submeter info a um servidor web. -->
+            <input inputList type = "text" id = "input" />
+            <button id = "add">+</button>
+        </form>
+        <div class="toDo" id="toDoContainer" dataList></div> <!-- div fantasma que será preenchida pelo JavaScript -->
+        <script src = "./4-ToDo.js"></script>
+    </body>
+</html>
