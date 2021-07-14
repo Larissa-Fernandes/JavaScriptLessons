@@ -1,18 +1,15 @@
 // Objeto anime
 
-class Anime {
-    constructor(id, name, studio, category, episodes, recomended, finished) {
-        this.id = id
-        this.name = name
-        this.studio = studio
-        this.category = category
-        this.episodes = episodes
-        this.recomended = recomended
-        this.finished = finished
-    }
-}
+const animes = require('./dataBase.js')
+const readline = require ('readline-sync') //realine-sync recebe a entrada do usuário, é preciso declarar
 
-const aoHaruRide = new Anime (1, "Ao Haru Ride", "Production I.G", "Shoujo", 12, true, true)
-const ouran = new Anime (2, "Ouran Koukou Host Club", "Bones", "Shoujo", 26, true, true)
-const kokkuri = new Anime (3, "Gugure! Kokkuri-san", "TMS Entertainment", "Comedy", 12, true, true)
-const shingeki = new Anime (4, "Shingeki no Kyojin", "Production I.G", "Shounen", 75, true, false)
+if (readline.keyInYN('Do you want find a Anime by genre? ')){  //reconhece YN sem o enter
+    // 'Y' selecionado    
+    const genreFilter = readline.question ("Select a genre:\nComedy | Mecha | Shoujo | Shounen\n")
+
+    const genre = animes.filter (animes => animes.genre === genreFilter)
+
+    console.table (genre)
+}else {
+    console.table (animes)
+}
